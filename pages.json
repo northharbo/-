@@ -1,0 +1,689 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/tool/tool",
+			"style": {
+				"navigationBarTitleText": "青藤工作室",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"backgroundColor": "#6ad2f1",
+				"navigationBarBackgroundColor": "#6ad2f1",
+				"navigationBarTextStyle": "white",
+				"backgroundTextStyle": "dark"
+			}
+
+		}, {
+			"path": "pages/program/program",
+			"style": {
+				"navigationBarTitleText": "项目",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+
+			}
+
+		},
+		{
+			"path": "pages/article-detail/article-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+				// "usingComponents": {
+				// 	"wxparser": "plugin://wxparserPlugin/wxparser"
+				// }
+			}
+
+
+		}, {
+			"path": "pages/task-detail/task-detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+				// "usingComponents": {
+				// 	"wxparser": "plugin://wxparserPlugin/wxparser"
+				// }
+			}
+
+
+		}, {
+			"path": "pages/detail/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+				// "usingComponents": {
+				// 	"wxparser": "plugin://wxparserPlugin/wxparser"
+				// }
+			}
+
+		}, {
+			"path": "pages/index/introduce/introduce",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTitleText": "青藤工作室",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/index/send-word/send-word",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/cat/cat",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/weixin_article/weixin_article",
+			"style": {
+				"navigationBarTitleText": "",
+				// "navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/about-us/about-us",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/weChatAuth/weChatAuth",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"enablePullDownRefresh": false
+			}
+
+		}
+	   
+        ,{
+            "path" : "pages/qt-studio/qt-studio",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"subPackages": [{
+			"root": "pagesProgram",
+			"pages": [{
+					"path": "game-program/game-program",
+					"style": {
+						"navigationBarTitleText": "游戏",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "video-detail/video-detail",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+
+				{
+					"path": "weixin-program/weixin-program",
+					"style": {
+						"navigationBarTitleText": "小程序",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "web-program/web-program",
+					"style": {
+						"navigationBarTitleText": "web项目",
+						// "navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "system-program/system-program",
+					"style": {
+						"navigationBarTitleText": "管理系统",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "program-classify/program-classify",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "pagesCharts",
+			"pages": [{
+				"path": "lineCharts/lineCharts",
+				"style": {
+					"navigationBarTitleText": "折线数据报表",
+					// "navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+			}, {
+				"path": "pieCharts/pieCharts",
+				"style": {
+					"navigationBarTitleText": "饼状数据报表",
+					// "navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pagesShare",
+			"pages": [
+
+				{
+					"path": "article-share/article-share",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "task-share/task-share",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+				
+			    ,{
+                    "path" : "task-detail-share/task-detail-share",
+                    "style" :                                                                                    
+                {
+                   "navigationBarTitleText": "",
+                   "navigationStyle": "custom", // 隐藏系统导航栏
+                   "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+		},
+		{
+			"root": "pagesMy",
+			"pages": [
+
+				{
+					"path": "collect-article/collect-article",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "view-history/view-history",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "pagesStudy",
+			"pages": [{
+					"path": "study-classify/study-classify",
+					"style": {
+						// "navigationBarTitleText": "考研",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "web-font/web-font",
+					"style": {
+						"navigationBarTitleText": "前端",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "web-end/web-end",
+					"style": {
+						"navigationBarTitleText": "后端",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "game/game",
+					"style": {
+						"navigationBarTitleText": "游戏",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "examination/examination",
+					"style": {
+						"navigationBarTitleText": "考研",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		},
+		{
+			"root": "pagesPerson",
+			"pages": [{
+				"path": "teacher-des/teacher-des",
+				"style": {
+					"navigationBarTitleText": "指导老师介绍",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "principal/principal",
+				"style": {
+					"navigationBarTitleText": "工作室负责人",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "recruit-person/recruit-person",
+				"style": {
+					"navigationBarTitleText": "招新负责人",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "total-person/total-person",
+				"style": {
+					"navigationBarTitleText": "所有成员",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "get-job/get-job",
+				"style": {
+					"navigationBarTitleText": "就业",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "graduate-student/graduate-student",
+				"style": {
+					"navigationBarTitleText": "考研",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pagesPk",
+			"pages": [{
+				"path": "index/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "do-problem/do-problem",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "rank/rank",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "total-problem/total-problem",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "essay-question/essay-question",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "grade-tabel/grade-tabel",
+				"style": {
+					"navigationBarTitleText": "成绩单",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "classify-question/classify-question",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+
+					"enablePullDownRefresh": false
+				}
+
+			}, {
+				"path": "classify-question-answer/classify-question-answer",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom", // 隐藏系统导航栏
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pagesTool",
+			"pages": [{
+					"path": "sign-up/sign-up",
+					"style": {
+						"navigationBarTitleText": "报名",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "tasked-detail/tasked-detail",
+					"style": {
+						"navigationBarTitleText": "报名",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+				},
+				{
+					"path": "assessment-task/assessment-task",
+					"style": {
+						"navigationBarTitleText": "考核任务",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "submit-task/submit-task",
+					"style": {
+						"navigationBarTitleText": "提交考核",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "submited-task/submited-task",
+					"style": {
+						"navigationBarTitleText": "已提交考核",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "contact-us/contact-us",
+					"style": {
+						"navigationBarTitleText": "联系我们",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+						// "usingComponents": {
+						// 	"wxparser": "plugin://wxparserPlugin/wxparser"
+						// }
+					}
+
+				}, {
+					"path": "study-resource/study-resource",
+					"style": {
+						"navigationBarTitleText": "学习资源",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				},
+				{
+					"path": "edit-userinfo/edit-userinfo",
+					"style": {
+						"navigationBarTitleText": "编辑信息",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "registration-list/registration-list",
+					"style": {
+						"navigationBarTitleText": "报名名单",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "internal-information/internal-information",
+					"style": {
+						"navigationBarTitleText": "青藤工作室内部信息",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "arrange-list/arrange-list",
+					"style": {
+						"navigationBarTitleText": "面试安排表",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "upload-file/upload-file",
+					"style": {
+						"navigationBarTitleText": "上传资源",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "sign-up-list/sign-up-list",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "submit-task-list/submit-task-list",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+
+				, {
+					"path": "sign/sign",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "sign-mang/sign-mang",
+					"style": {
+						"navigationBarTitleText": "",
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "publish-sign/publish-sign",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "arrange-card-list/arrange-card-list",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "about-us/about-us",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "usag-method/usag-method",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "admin-submited-asm/admin-submited-asm",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}, {
+					"path": "admin-submited-list/admin-submited-list",
+					"style": {
+						"navigationBarTitleText": "",
+						"navigationStyle": "custom", // 隐藏系统导航栏
+						"enablePullDownRefresh": false
+					}
+
+				}
+			]
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "青藤工作室",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#323232",
+		"selectedColor": "#4378eb",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/tabber/a2.png",
+				"selectedIconPath": "static/tabber/a1.png"
+
+			},
+			{
+				"text": "项目",
+				// "pagePath": "pages/index/index",
+				"iconPath": "static/tabber/f2.png",
+				"selectedIconPath": "static/tabber/f1.png",
+				"pagePath": "pages/program/program"
+
+			},
+			{
+				"text": "学习",
+				// "pagePath": "pages/index/index",
+				"iconPath": "static/tabber/k2.png",
+				"selectedIconPath": "static/tabber/k1.png",
+				"pagePath": "pages/study/study"
+
+			},
+			{
+				"text": "工作室",
+				// "pagePath": "pages/home/home",
+				// "pagePath": "pages/index/index",
+				"iconPath": "static/tabber/g2.png",
+				"selectedIconPath": "static/tabber/g1.png",
+
+				"pagePath": "pages/tool/tool"
+
+			},
+			{
+				"text": "我的",
+				// "pagePath": "pages/index/index",
+				"iconPath": "static/tabber/d2.png",
+				"selectedIconPath": "static/tabber/d1.png",
+				"pagePath": "pages/my/my"
+			}
+			
+		]
+	}
+
+}
